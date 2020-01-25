@@ -24,16 +24,16 @@
 const axiosPromise2 = axios
     .get('https://lambda-times-backend.herokuapp.com/articles')
     .then(response2 => {
-        console.log('res2', response2.data.articles)
+       // console.log('res2', response2.data.articles)
         let temp2 = Object.values(response2.data.articles)
  
        // temp.forEach(x => {
        //     console.log(temp2[`${x}`])
        // })
-        console.log("temp2", (temp2))
+     //   console.log("temp2", (temp2))
         temp2.forEach(array => {
             array.forEach(index => {
-                console.log("index", index)
+             //   console.log("index", index)
                 cardsContainer.append(createCard(index))
             })
         })
@@ -41,7 +41,7 @@ const axiosPromise2 = axios
     // temp.forEach(x => {
     //     topics.append(createNewTab(x))
     })
-console.log("axios 2", axiosPromise2)
+//console.log("axios 2", axiosPromise2)
 const createCard = something => {
     const card = document.createElement('div')
     card.classList.add('card')
