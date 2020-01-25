@@ -8,9 +8,9 @@
 //
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
+// const topics = document.querySelector('.topics')
+// topics.classList.add('topics')
 const topics = document.querySelector('.topics')
-topics.classList.add('topics')
-
 const createNewTab = x => {
 
     const tab = document.createElement('div')
