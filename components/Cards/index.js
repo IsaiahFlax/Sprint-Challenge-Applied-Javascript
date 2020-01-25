@@ -18,6 +18,7 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
  const cardsContainer = document.querySelector('.cards-container')
+ cardsContainer.classList.add('cards-container')
 
 
 const axiosPromise2 = axios
@@ -52,15 +53,17 @@ const createCard = something => {
     card.append(headline)
 
     const author = document.createElement('div')
-    card.classList.add('author')
+    author.classList.add('author')
     card.append(author)
 
     const imageContainer = document.createElement('div')
     imageContainer.classList.add('img-container')
+    author.append(imageContainer)
 
     const image = document.createElement('img')
     image.src = `${something.authorPhoto}`
     imageContainer.append(image)
+    
 
     const name = document.createElement('span')
     name.textContent = `By ${something.authorName}`
