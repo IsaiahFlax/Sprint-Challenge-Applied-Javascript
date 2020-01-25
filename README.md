@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+    DOM is document object model.  It is a way to use JS to create HTML
+
 2. What is an event?
+
+    Things that happen that JS can respond to
 
 3. What is an event listener?
 
+    The addEventListener() method attaches an event handler to the specified element
+
 4. Why would we convert a NodeList into an Array?
 
+    So we can use JS
+
 5. What is a component?
+
+    A component is some JS that is reuseable
 
 ### Git Set up
 
