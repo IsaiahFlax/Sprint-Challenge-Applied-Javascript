@@ -29,7 +29,7 @@ function header() {
 
 return header
 
-console.log("header", header())
+
 
 }
 console.log("header", header())
