@@ -20,7 +20,7 @@ const createNewTab = x => {
     
 
 
-    console.log('tab', tab)
+    //console.log('tab', tab)
     return tab
 }
     
@@ -31,6 +31,6 @@ const axiosPromise = axios
     temp.forEach(x => {
         topics.append(createNewTab(x))
     })
-    console.log('res', temp)
+   // console.log('res', temp)
 
 })
