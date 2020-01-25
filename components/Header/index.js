@@ -28,5 +28,8 @@ function header() {
     temp.classList.add('temp')
 
 return header
+
+console.log("header", header())
+
 }
 console.log("header", header())
